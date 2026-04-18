@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masterclass: Gestão de Lucro Real - Montanholi Educação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --aqua-green: #00c2cb;
+            --dark-gray: #1f2937;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--dark-gray);
+        }
+        .bg-aqua { background-color: var(--aqua-green); }
+        .text-aqua { color: var(--aqua-green); }
+        .border-aqua { border-color: var(--aqua-green); }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+        }
+        .cta-button {
+            background-color: var(--aqua-green);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(0, 194, 203, 0.39);
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+    </style>
+    <!-- Application Structure Plan:
+        1. Sticky Top Bar: Scarcity/Attention.
+        2. Hero Section: The main promise + CTA.
+        3. The Pain Section: Identification with the 10 problems.
+        4. The Solution: Introduction to the Masterclass and Márcia.
+        5. Content Modules: What exactly is inside the 1 hour.
+        6. Bonus Section: Extra value.
+        7. Pricing: Anchoring and Purchase button.
+        8. FAQ: Overcoming objections.
+    -->
+    <!-- Visualization & Content Choices:
+        - Theme: Minimalist and Professional (White/Dark Gray/Aqua).
+        - Layout: Vertical sales letter style for high conversion on mobile.
+        - Icons: Lucide-style simple icons using Tailwind/Unicode.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1587272927987010');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+</head>
+<body class="bg-white">
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1587272927987010&ev=PageView&noscript=1"/>
+  </noscript>
+
+    <!-- Sticky Bar -->
+    <div class="bg-[#00c2cb] text-white text-center py-2 text-sm font-semibold px-4">
+        ⚠️ Oferta de Lançamento: Acesso imediato por apenas R$ 47,00
+    </div>
+
+    <!-- Header -->
+    <nav class="py-6 px-6 max-w-7xl mx-auto flex justify-between items-center">
+        <div class="font-extrabold text-2xl tracking-tighter">
+            MONTANHOLI<span class="text-aqua">EDUCAÇÃO</span>
+        </div>
+        <a href="#preço" class="hidden md:block text-sm font-bold border-2 border-aqua text-aqua px-6 py-2 rounded-full hover:bg-aqua hover:text-white transition-all">
+            QUERO MEU ACESSO
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-12 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block bg-aqua/10 text-aqua font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6">
+                Para Micro e Pequenos Empresários
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                Você vende, trabalha e o dinheiro <span class="text-aqua">simplesmente some?</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                Aprenda a estancar as sangrias financeiras da sua empresa e descubra o <strong>lucro que realmente sobra</strong> nesta Masterclass exclusiva com a professora e especialista <strong>Márcia Montanholi</strong>.
+            </p>
+            
+            <!-- VSL Video Embed -->
+            <div class="bg-gray-800 w-full aspect-video rounded-2xl shadow-2xl mb-12 relative overflow-hidden">
+                <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/watch?v=Exytznf_7_o" 
+                    title="Masterclass Montanholi Educação" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <a href="#preço" class="cta-button text-white text-xl font-bold py-6 px-12 rounded-2xl inline-block w-full md:w-auto">
+                QUERO VER O LUCRO DE VERDADE!
+            </a>
+            <p class="mt-4 text-sm text-gray-500">Acesso vitalício + Materiais de apoio</p>
+        </div>
+    </section>
+
+    <!-- The Problem (The 10 Pains) -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">A realidade dói, mas precisa ser vista:</h2>
+                <p class="text-gray-500">Se você se identifica com mais de 3 itens abaixo, sua empresa está em risco.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex gap-4 p-6 rounded-xl border border-gray-100 hover:bg-gray-50 transition-colors">
+                    <span class="text-2xl">❌</span>
+                    <div>
+                        <h4 class="font-bold">Mistura Patrimonial</h4>
+                        <p class="text-sm text-gray-600">Você paga o boleto da escola dos filhos com o cartão do CNPJ e nunca sabe o que é lucro e o que é gasto pessoal.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 rounded-xl border border-gray-100 hover:bg-gray-50 transition-colors">
+                    <span class="text-2xl">❌</span>
+                    <div>
+                        <h4 class="font-bold">Cegueira de Caixa</h4>
+                        <p class="text-sm text-gray-600">Olha o saldo do banco hoje e acha que está rico, esquecendo os boletos pesados que vencem amanhã.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 rounded-xl border border-gray-100 hover:bg-gray-50 transition-colors">
+                    <span class="text-2xl">❌</span>
+                    <div>
+                        <h4 class="font-bold">Precificação "Copiada"</h4>
+                        <p class="text-sm text-gray-600">Seu preço é baseado no vizinho, mas você não sabe se a sua margem cobre seus custos fixos.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 rounded-xl border border-gray-100 hover:bg-gray-50 transition-colors">
+                    <span class="text-2xl">❌</span>
+                    <div>
+                        <h4 class="font-bold">Vício em Antecipação</h4>
+                        <p class="text-sm text-gray-600">Você vive de antecipar cartão, pagando taxas abusivas para o banco apenas para conseguir pagar o salário da equipe.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-900 font-bold text-xl italic">"Vender não é o mesmo que ter lucro. Faturamento é vaidade, lucro é sanidade."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution (About Márcia) -->
+    <section class="py-20 px-6 bg-gray-900 text-white rounded-t-[50px]">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <!-- Foto da Márcia Placeholder -->
+                <div class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden border-4 border-aqua group shadow-2xl">
+
+    <!-- Glow externo sutil -->
+    <div class="absolute inset-0 rounded-3xl ring-4 ring-aqua/20 group-hover:ring-aqua/40 transition-all duration-500"></div>
+
+    <!-- Imagem -->
+    <img 
+        src="https://mav-files-prd.s3.amazonaws.com/account_pages/9f09023a-8e3b-11f0-a437-d7bda254fb85/MM_-_Foto_de_Perfil_-_4x5_WebP_n0sdz1.webp"
+        alt="Márcia Montanholi"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        loading="lazy"
+    />
+
+    <!-- Overlay leve para contraste -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+
+</div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">Quem vai te guiar?</h2>
+                <p class="text-aqua font-bold text-xl mb-4">Márcia Montanholi</p>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Com anos de experiência no campo de batalha da gestão financeira, Márcia fundou a <strong>Montanholi Educação</strong> com uma missão clara: traduzir a "contabilidade chata" para a linguagem do dono de negócio.
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    Ela já ajudou centenas de empresários a saírem do caos financeiro e recuperarem a paz de espírito através de um método simples, prático e direto ao ponto. Sem nomes difíceis, apenas resultados no caixa.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/5 p-4 rounded-xl">
+                        <div class="text-aqua text-2xl font-bold">+10 anos</div>
+                        <div class="text-xs text-gray-400">De Experiência</div>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl">
+                        <div class="text-aqua text-2xl font-bold">Direto</div>
+                        <div class="text-xs text-gray-400">Ao Ponto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What they will learn -->
+    <section class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">O que você vai dominar em 60 minutos:</h2>
+            <p class="text-gray-500">Um roteiro prático para transformar sua gestão financeira ainda hoje.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+            <div class="flex items-start gap-4 bg-gray-50 p-6 rounded-2xl">
+                <div class="bg-aqua text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div>
+                    <h4 class="font-bold text-lg">Blindagem Patrimonial</h4>
+                    <p class="text-gray-600">Como separar as contas sem sofrimento e definir seu pró-labore ideal.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 bg-gray-50 p-6 rounded-2xl">
+                <div class="bg-aqua text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div>
+                    <h4 class="font-bold text-lg">Cálculo de Margem Real</h4>
+                    <p class="text-gray-600">A fórmula simples para saber se seu preço está te dando lucro ou te afundando.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 bg-gray-50 p-6 rounded-2xl">
+                <div class="bg-aqua text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <div>
+                    <h4 class="font-bold text-lg">Projeção de Fluxo de Caixa</h4>
+                    <p class="text-gray-600">Aprenda a olhar 3 meses para frente e nunca mais seja pego de surpresa por boletos.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 bg-gray-50 p-6 rounded-2xl">
+                <div class="bg-aqua text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <div>
+                    <h4 class="font-bold text-lg">Eliminação de Gastos Invisíveis</h4>
+                    <p class="text-gray-600">Onde o dinheiro vaza e como fechar essas torneiras imediatamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section class="py-16 px-6 bg-aqua/5">
+        <div class="max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-12 border-2 border-dashed border-aqua flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/3 text-8xl text-center md:text-center">🎁</div>
+            <div class="md:w-2/3">
+                <h3 class="text-2xl font-bold mb-2">BÔNUS EXCLUSIVO:</h3>
+                <h4 class="text-xl text-aqua font-bold mb-4">Planilha de Diagnóstico Financeiro Express</h4>
+                <p class="text-gray-600 text-sm mb-4">
+                    Ao garantir sua vaga na Masterclass, você recebe a planilha que a Márcia usa para diagnosticar empresas em menos de 15 minutos. É só preencher e ver o resultado.
+                </p>
+                <span class="text-xs bg-gray-200 text-gray-700 px-3 py-1 rounded font-bold">VALOR INDIVIDUAL: R$ 97,00 (Grátis para você)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Section -->
+    <section id="preço" class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto bg-white p-12 rounded-[40px] shadow-2xl border border-gray-100">
+            <p class="text-gray-500 uppercase tracking-widest font-bold text-sm mb-4">Invista no seu Negócio</p>
+            <h2 class="text-4xl font-extrabold mb-8">Masterclass Lucro de Verdade</h2>
+            
+            <div class="flex items-center justify-center gap-4 mb-4">
+                <span class="text-gray-400 line-through text-xl">De R$ 197,00</span>
+                <span class="bg-green-100 text-green-700 font-bold px-3 py-1 rounded text-sm">76% OFF</span>
+            </div>
+            
+            <div class="mb-10">
+                <span class="text-gray-900 text-2xl font-bold align-top mt-2 inline-block">R$</span>
+                <span class="text-7xl font-black text-gray-900">47</span>
+                <span class="text-gray-500 text-xl font-bold">,00</span>
+                <p class="text-gray-400 mt-2 text-sm">Pagamento único. Acesso vitalício.</p>
+            </div>
+
+            <a href="https://pay.hotmart.com/A104596683D?checkoutMode=10" 
+   target="_blank"
+   class="cta-button text-white text-2xl font-bold py-6 px-12 rounded-2xl w-full mb-8 inline-block text-center">
+    QUERO MEU ACESSO AGORA
+</a>
+
+            <div class="flex flex-wrap justify-center gap-6 text-gray-400 text-xs font-bold uppercase">
+                <span>💳 Cartão de Crédito</span>
+                <span>⚡ PIX (Acesso Imediato)</span>
+            </div>
+            
+            <div class="mt-12 flex items-center justify-center gap-4 border-t pt-8">
+                <div class="text-4xl">🛡️</div>
+                <div class="text-left">
+                    <h5 class="font-bold text-sm">GARANTIA INCONDICIONAL DE 7 DIAS</h5>
+                    <p class="text-xs text-gray-500">Se não gostar da aula, devolvemos seu dinheiro. Sem perguntas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Dúvidas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <h4 class="font-bold mb-2">Para quem é essa Masterclass?</h4>
+                    <p class="text-sm text-gray-600">Para donos de micro e pequenas empresas que sentem que o financeiro está um caos ou que o faturamento não reflete em dinheiro no bolso.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <h4 class="font-bold mb-2">Quanto tempo dura a aula?</h4>
+                    <p class="text-sm text-gray-600">A aula principal tem aproximadamente 60 minutos de conteúdo denso e prático, sem enrolação.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <h4 class="font-bold mb-2">Vou receber material de apoio?</h4>
+                    <p class="text-sm text-gray-600">Sim! Você terá acesso à nossa planilha de diagnóstico e um guia em PDF com os principais conceitos da aula.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                    <h4 class="font-bold mb-2">Como recebo o acesso?</h4>
+                    <p class="text-sm text-gray-600">Imediatamente após a confirmação do pagamento, você receberá um e-mail com seus dados de acesso à nossa plataforma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 text-center text-gray-500 text-xs border-t border-gray-100">
+        <div class="font-extrabold text-xl tracking-tighter mb-4 text-dark-gray">
+            MONTANHOLI<span class="text-aqua">EDUCAÇÃO</span>
+        </div>
+        <p class="mb-2">CNPJ: 05.338.048/0001-28 | Todos os direitos reservados.</p>
+        <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="hover:text-aqua">Termos de Uso</a>
+            <a href="#" class="hover:text-aqua">Privacidade</a>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica simples para scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
